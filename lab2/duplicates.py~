@@ -1,0 +1,15 @@
+#Created by Harrison Barnett 11 Aug 17
+#Created for Comp1531 Lab2 Exercise
+
+s = input("Please enter a string") #input is saved in variable "s"
+
+words_list = s.split() #List of words from the string "s" that have been seperated (split) via space
+
+words = {} #Create an array (dictionary) called "words" that is currently empty
+
+for word in words_list:
+	if word not in words:
+		words[word] = 1
+	else:
+		words[word] += 1
+
