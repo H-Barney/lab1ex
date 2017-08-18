@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+   <head>
+   <title>Hello page</title>
+   </head>
+   <body>
+       {% if all_users %}
+       {% for user in all_users %}
+      <h1> Hi, {{ user[0] }} your zID is:{{ user[1] }} and a brief description of yourself is: {{ user[2] }}) </h1>
+      {% endfor %}
+      {%else%}
+      No students to show
+      {% endif %}
+   </body>
+</html>
