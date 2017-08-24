@@ -22,6 +22,15 @@ def hello():
         reader = csv.reader(csv_in)
         for row in reader:
         	return render_template("hello.html", all_users=reader)
+        	
+@app.route("/Hello/Info")
+def info():
+
+    with open('example.csv','r') as csv_in:
+        reader = csv.reader(csv_in)
+        for row in reader:
+        	return render_template("info.html", all_users=reader)
+	
    
 #
 #

@@ -1,12 +1,14 @@
 <!doctype html>
 <html>
    <head>
-   <title>Hello page</title>
+   <title>Extra Information</title>
    </head>
    <body>
        {% if all_users %}
        {% for user in all_users %}
-      <h5> Hi, <a href="/Info">{{ user[0] }}</a> </h5>
+      <h5> Details of {{ user[0] }}</h5>
+      <p> zID: {{ user[1]  }}</p>
+      <p> Description: {{ user[2] }}</p>
       {% endfor %}
       {%else%}
       No students to show
