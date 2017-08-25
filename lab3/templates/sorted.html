@@ -4,6 +4,12 @@
    <title>Sorted List</title>
    </head>
    <body>
-      <h5>{dispList}</h5>
+       {% if dispList %}
+       {% for line in dispList %}
+      <h5>{{line}}</h5>
+      {% endfor %}
+      {%else%}
+      No list to show
+      {% endif %}
    </body>
 </html>

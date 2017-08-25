@@ -3,6 +3,10 @@ from server import app, user_input
 import csv
 @app.route("/", methods=["GET", "POST"])
 def index2():
+
+	with open('bubble.csv','w') as csv_out:
+		writer = csv.writer(csv_out)				
+		writer.writerow(" ")
 	if request.method == "POST":
 		sort = request.form["sort"]
 		listsort = sort.split(",")
