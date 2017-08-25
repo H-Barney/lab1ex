@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+   <head>
+   <title>Web app Calculator</title>
+   </head>
+   <body>
+   
+   
+       <p><button type="submit"> 1 </button>
+       <button type="submit"> 2 </button>
+       <button type="submit"> 3 </button>
+       <button type="submit"> C </button></p>
+       <p><button type="bu"> 4 </button>
+       <button type="submit"> 5 </button>
+       <button type="submit"> 6 </button>
+       <button type="submit"> + </button></p>
+       <p><button type="submit"> 7 </button>
+       <button type="submit"> 8 </button>
+       <button type="submit"> 9 </button>
+       <button type="submit"> - </button></p>
+       <p><button type="submit"> 0 </button>
+       <button type="submit"> * </button>
+       <button type="submit"> / </button>
+       <button type="submit"> = </button></p>
+       <p><button type="submit"> ( </button>
+       <button type="submit"> ) </button>
+       <button type="submit"> sin </button>
+       <button type="submit"> tan </button></p>
+       <p><button type="submit"> cos </button>
+       <button type="submit"> log </button>
+       <button type="submit"> sqrt </button>
+       <button type="submit"> CE </button></p>
+       
+   </body>
+</html>
