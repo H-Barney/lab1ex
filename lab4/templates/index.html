@@ -4,32 +4,49 @@
    <title>Web app Calculator</title>
    </head>
    <body>
-   
-   
-       <p><button type="submit" value = 1> 1 </button>
-       <button type="submit" value = 2> 2 </button>
-       <button type="submit" value = 3> 3 </button>
-       <button type="submit"> C </button></p>
-       <p><button type="submit"value = 4> 4 </button>
-       <button type="submit" value = 5> 5 </button>
-       <button type="submit" value = 6> 6 </button>
-       <button type="submit"> + </button></p>
-       <p><button type="submit" value = 7> 7 </button>
-       <button type="submit" value = 8> 8 </button>
-       <button type="submit" value = 9> 9 </button>
-       <button type="submit"> - </button></p>
-       <p><button type="submit" value = 0> 0 </button>
-       <button type="submit"> * </button>
-       <button type="submit"> / </button>
-       <button type="submit"> = </button></p>
-       <p><button type="submit"> ( </button>
-       <button type="submit"> ) </button>
-       <button type="submit"> sin </button>
-       <button type="submit"> tan </button></p>
-       <p><button type="submit"> cos </button>
-       <button type="submit"> log </button>
-       <button type="submit"> sqrt </button>
-       <button type="submit"> CE </button></p>
+   	<div class="box">
+   	{% if button %}
+   		{{button}}
+   	{% endif %}
+   	</div>
+   	<form method="POST">
+       <p>
+       <button type="submit" value = "1" name ="bt"> 1 </button>
+       <button type="submit" value = "2" name ="bt"> 2 </button>
+       <button type="submit" value = "3" name ="bt"> 3 </button>
+       <button type="submit" value = "C" name ="bt"> C </button>
+       </p>
+       <p>
+       <button type="submit" value = "4" name ="bt"> 4 </button>
+       <button type="submit" value = "5" name ="bt"> 5 </button>
+       <button type="submit" value = "6" name ="bt"> 6 </button>
+       <button type="submit" value = "+" name ="bt"> + </button>
+       </p>
+       <p>
+       <button type="submit" value = "7" name ="bt"> 7 </button>
+       <button type="submit" value = "8" name ="bt"> 8 </button>
+       <button type="submit" value = "9" name ="bt"> 9 </button>
+       <button type="submit" value = "-" name ="bt"> - </button>
+       </p>
+       <p>
+       <button type="submit" value = "0" name ="bt"> 0 </button>
+       <button type="submit" value = "*" name ="bt"> * </button>
+       <button type="submit" value = "/" name ="bt"> / </button>
+       <button type="submit" value = "=" name ="bt"> = </button>
+       </p>
+       <p>
+       <button type="submit" value = "(" name ="bt"> ( </button>
+       <button type="submit" value = ")" name ="bt"> ) </button>
+       <button type="submit" value = "sin" name ="bt"> sin </button>
+       <button type="submit" value = "tan" name ="bt"> tan </button>
+       </p>
+       <p>
+       <button type="submit" value = "cos" name ="bt"> cos </button>
+       <button type="submit" value = "log" name ="bt"> log </button>
+       <button type="submit" value = "sqrt" name ="bt"> sqrt </button>
+       <button type="submit" value = "CE" name ="bt"> CE </button>
+		 </p>
+		</form>
        
    </body>
 </html>
