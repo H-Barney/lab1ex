@@ -1,3 +1,5 @@
+class System(object):
+
 class User(object):
 	def __init__(self,name):
 		self._name = name
@@ -9,9 +11,10 @@ class User(object):
 	def list_user_items(self):
 		#Sort through items for matching seller ID and add to list
 
-class Item(User):
+class Item(object):
 	def __init__(self,name,desc,startPrice,itemType,input1,input2):
 		self._bidID = #Random Number Gen
+		self._sellerID = User._id
 		self._itemName = name
 		self._itemDesc = desc
 		self._startPrice = startPrice
@@ -24,8 +27,14 @@ class Item(User):
 	def list_all_items(self):
 		#Forms a list of all items current for auction
 		
+class Electronic_items(Item):
+
+class Furniture_items(Item):
+
+class Book_items(Item):
+		
 	
-class Bid_Info(User,Item):
+class Bid_Info(object):
 	def __init__(self):
 		self._currentBid = 
 		self._time = #Time remaining on bid
